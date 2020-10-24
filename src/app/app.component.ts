@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { eventNames } from 'process';
 import { MainTopBarMenuService } from './services/core/main-top-bar-menu.service';
+import { SidebarService } from './services/core/sidebar.service';
 
 declare var App: any;
 
@@ -11,13 +12,15 @@ declare var App: any;
 })
 export class AppComponent implements OnInit {
 
-  constructor(private menuSvc: MainTopBarMenuService){}
+  constructor(private menuSvc: MainTopBarMenuService, private sidebarSvc: SidebarService){}
 
   title = 'app-realtime';
   miEmpresa: string = 'Grupo Flecha Amarilla';
   periodo: number = 2020;
 
   menuItems: any[] = [];
+
+  sidebarItems: any[] = [];
 
   ngOnInit(){
     App.init()
@@ -28,6 +31,10 @@ export class AppComponent implements OnInit {
   getData() {
     this.menuSvc.getItemsMenu().subscribe((data: any) =>  {
       this.menuItems = data;
+    });
+
+    this.sidebarSvc.getItemsSideBar().subscribe((data: any) => {
+      this.sidebarItems = data;
     });
   }
 

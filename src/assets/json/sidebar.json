@@ -1,0 +1,26 @@
+[
+    {
+        "section": "",
+        "title": "Dashboard",
+        "icon": "fa-tachometer-alt",
+        "items": []
+    },
+    {
+        "section": "Interface",
+        "title": "Components",
+        "icon": "fa-cog",
+        "items": [
+            {
+                "subTitle": "Custom Components:",
+                "subItems": [
+                    {
+                        "title": "Buttons"
+                    },
+                    {
+                        "title": "Cards"
+                    }
+                ]
+            }
+        ]
+    }
+]
