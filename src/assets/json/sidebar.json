@@ -17,11 +17,11 @@
                 "subItems": [
                     {
                         "title": "Buttons",
-                        "route": "buttons.html"
+                        "route": "components/buttons"
                     },
                     {
                         "title": "Cards",
-                        "route": "cards.html"
+                        "route": "components/cards"
                     }
                 ]
             }
