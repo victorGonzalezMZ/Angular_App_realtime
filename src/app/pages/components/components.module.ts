@@ -6,6 +6,7 @@ import { CardsComponent } from './cards/cards.component';
 import { CancelComponent } from './cancel/cancel.component';
 import { SearchComponent } from './search/search/search.component';
 import { ComponentsRouterModule } from './components.routes';
+import { PaisesComponent } from './paises/paises.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ComponentsRouterModule } from './components.routes';
     ButtonsComponent, 
     CardsComponent, 
     CancelComponent, 
-    SearchComponent
+    SearchComponent, 
+    PaisesComponent
   ],
   imports: [
     CommonModule,

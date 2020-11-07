@@ -16,7 +16,7 @@
   <!-- Custom Nav Item - Pages Collapse Menu -->
   <li class="nav-item" *ngFor="let item of sidebar_menuItems; let i = index" >
     
-    <a *ngIf="item.items.length == 0" class="nav-link" href="{{item.route}}">
+    <a *ngIf="item.items.length == 0" class="nav-link" [routerLink]="item.route" routerLinkActive="router-link-active">
       <i class="fas fa-fw {{item.icon}}"></i>
       <span>{{item.title}}</span>
     </a>
