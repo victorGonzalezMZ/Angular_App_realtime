@@ -19,7 +19,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     FooterComponent,
     TopbarComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    
   ],
   imports: [
     BrowserModule,

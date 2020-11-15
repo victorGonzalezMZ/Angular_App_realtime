@@ -7,6 +7,8 @@ import { CancelComponent } from './cancel/cancel.component';
 import { SearchComponent } from './search/search/search.component';
 import { ComponentsRouterModule } from './components.routes';
 import { PaisesComponent } from './paises/paises.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PaisesComponent } from './paises/paises.component';
   ],
   imports: [
     CommonModule,
-    ComponentsRouterModule
+    ComponentsRouterModule,
+    NgSelectModule, 
+    FormsModule
   ]
 })
 export class ComponentsModule { }

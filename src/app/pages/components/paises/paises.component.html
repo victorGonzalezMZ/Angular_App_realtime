@@ -1,11 +1,16 @@
 <h1>Paises</h1>
 
-<div class="d-none ">
-    <input type="submit">
-    <button class="btn btn-primary"></button>
+<div class="row">
+    <div class="col-md-12">
+        <ng-select 
+            [items]="defaultBindingsList"
+            (change)="onChangeRegion()" 
+            [(ngModel)]="selectedRegion">
+        </ng-select>
+    </div>
 </div>
 
-<div class="card-deck">
+<div class="row">
     
     <div class="col-md-3" *ngFor="let item of paisesList">
 

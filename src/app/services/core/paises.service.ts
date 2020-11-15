@@ -10,6 +10,10 @@ export class PaisesService {
 
   constructor(private http: HttpClient) { }
 
+  getAllPaises() {
+    return this.http.get(`${END_POINT}/all`);
+  }
+
   getPaisesByRegion(region: string) {
 
     return this.http.get(`${END_POINT}/region/${region}`);
